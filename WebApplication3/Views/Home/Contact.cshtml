@@ -1,0 +1,12 @@
+﻿@model System.Data.SqlClient.SqlDataReader
+
+@{
+    System.Data.SqlClient.SqlDataReader reader = Model;
+}
+
+
+
+@while (reader.Read())
+{
+    <p> @reader[1] <br /> @reader[3] </p>
+}

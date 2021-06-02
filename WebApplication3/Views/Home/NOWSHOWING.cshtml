@@ -1,0 +1,20 @@
+﻿
+<h1>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; NOWSHOWING
+</h1>
+
+@model System.Data.SqlClient.SqlDataReader
+
+@{
+    System.Data.SqlClient.SqlDataReader reader = Model;
+}
+
+
+
+@while (reader.Read())
+{
+    <p> @reader[2] <br /> </p>
+}
+
+
